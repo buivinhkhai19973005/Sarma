@@ -54,7 +54,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="myHeader">
     <div class="header__content">
       <div class="header__logo">
         <img src="./img/logo-2.png" alt="">
@@ -808,25 +808,120 @@
       </div>
       <div class="container footer__center">
           <div class="footer__left">
-              <img src="./img/logo-2.png" alt="">
+              <img src="./img/logo-white.png" alt="">
               <div class="footer__left-icon">
-                  <i class="fa fa-phone"></i>
-                  <span>1800-123-4567 <br> +91 987-654-3210</span>
+                  <div class="left__icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="left__title">
+                    <span>1800-123-4567 <br> +91 987-654-3210</span>
+                  </div>
               </div>
               <div class="footer__left-icon">
-                  <i class="fa fa-phone"></i>
-                  <span>1800-123-4567 <br> +91 987-654-3210</span>
+                  <div class="left__icon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="left__title">
+                    <span>info@example.com <br> services@gmail.com</span>
+                  </div>
               </div>
               <div class="footer__left-icon">
-                  <i class="fa fa-phone"></i>
-                  <span>1800-123-4567 <br> +91 987-654-3210</span>
+                  <div class="left__icon">
+                    <i class="fa fa-map-marker-alt"></i>
+                  </div>
+                  <div class="left__title">
+                    <span>Demo Address #8901 Marmora <br> Road Chi Minh City, Vietnam</span>
+                  </div>
               </div>
+              
           </div>
           <div class="footer__right">
-              <div class="services1">h1ellooo</div>
-              <div class="services1">h1ellooo</div>
-              <div class="services1">h1ellooo</div>
+              <div class="services1">
+                  <h5 class="fr__title">OUR LINK</h5>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Home</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>About Us</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Services</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Team</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Blog</span>
+                </div>
+              </div>
+              <div class="services1">
+                  <h5 class="fr__title">OUR SERVICES</h5>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Strategy & Research</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Web Development</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Web Solution</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Digital Marketing</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>App Design </span>
+                </div>
+              </div>
+              <div class="services1">
+                  <h5 class="fr__title">ORTHER LINK</h5>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>FAQ</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Portfolio</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Privacy Policy</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Terms & Conditions</span>
+                </div>
+                  <div class="footer__right-icon">
+                      <i class="fa fa-angle-right"></i> 
+                      <span>Support </span>
+                </div>
+              </div>
+              
           </div>
+      </div>
+      <div class="container-fluid">
+        <div class="footer__bottom">
+            <!-- <div class="footer__bottom-left">
+                <p>Copyright © 2021 <span>DexignZone</span>. All rights reserved.</p>
+            </div> -->
+            <div class="footer__bottom-left">
+              <p>Copyright © 2021 <span>DexignZone</span>. All rights reserved.</p>
+            </div>
+            <div class="footer__bottom-right">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+        </div>
       </div>
     
       
@@ -921,6 +1016,22 @@
     });
 
   </script>
+
+   <!--  -->
+   <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 </body>
 
 </html>
